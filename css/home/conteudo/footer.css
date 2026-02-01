@@ -1,0 +1,12 @@
+/* FOOTER */
+
+.footer {
+  grid-area: footer;
+  background-image: var(--gradiente-principal);
+}
+
+.footer p {
+  color: var(--cor-paragrafo);
+  text-align: center;
+  padding: var(--medium-space);
+}

@@ -1,0 +1,42 @@
+/* CARACTERISTICAS*/
+.caracteristicas {
+  display: flex;
+  gap: var(--medium-space);
+  align-items: flex-start;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background-image: var(--gradiente-principal);
+  border-radius: var(--border-radius-padrao);
+  box-shadow: var(--sombra-padrao);
+  position: relative;
+}
+
+.caracteristicas span {
+  display: block;
+  color: var(--cor-primaria-2);
+}
+
+.caracteristicas-numero {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.caracteristicas-rotulo {
+  background-color: var(--cor-0);
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: var(--cor-paragrafo);
+}
+

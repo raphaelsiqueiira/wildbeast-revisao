@@ -1,0 +1,55 @@
+/* SIDENAV */
+.sidenav {
+  grid-area: sidenav;
+  background-color: var(--cor-1);
+  padding: var(--medium-space);
+}
+
+.sidenav .sidenav-item a {
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background-color: var(--cor-0);
+  padding: 1.25rem;
+  border-radius: var(--border-radius-padrao);
+  box-shadow: var(--sombra-padrao);
+  transition: 0.1s ease-out;
+  border: 5px solid transparent;
+}
+
+.sidenav .sidenav-item a:hover {
+  background-color: var(--cor-primaria-2);
+  scale: 1.1;
+  border: 5px solid var(--cor-primaria-1);
+}
+
+@media (max-width: 800px) {
+  .sidenav {
+    overflow-x: auto;
+    padding: 0 var(--medium-space);
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "\2192";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--cor-deco);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+  }
+
+  .sidenav-item {
+    flex: 1 0 60px;
+  }
+
+  .sidenav .sidenav-item a {
+    margin: 30px 30px 30px 0px;
+  }
+}

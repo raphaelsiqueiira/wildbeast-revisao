@@ -1,0 +1,20 @@
+/*CSS RESE E UTILITARIOS*/
+@import "utilitarios/variaveis.css";
+@import "utilitarios/preferencias.css";
+@import "utilitarios/utils.css";
+@import "utilitarios/reset.css";
+
+/* HOME*/
+@import "home/estrutura.css";
+@import "home/header.css";
+@import "home/sidenav.css";
+
+/* CONTEUDO HOME*/
+@import "home/conteudo/content.css";
+@import "home/conteudo/caracteristicas.css";
+@import "home/conteudo/citacao_atributos.css";
+@import "home/conteudo/anuncios.css";
+@import "home/conteudo/footer.css";
+
+/* ANIMACOES */
+@import "utilitarios/animacoes.css";

@@ -1,0 +1,58 @@
+/* HEADER*/
+.header {
+  grid-area: header;
+  background-image: var(--gradiente-principal);
+  padding: var(--medium-space);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--medium-space);
+}
+
+.navigation-list a {
+  padding: 0.625rem;
+  color: var(--cor-links);
+  font-size: 1.125rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-padrao);
+  transition: 0.1s;
+}
+
+.navigation-list a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  scale: 1.1;
+}
+
+@media (max-width: 800px) {
+  .estrutura-grid {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
+
+  .header {
+    grid-template-columns: auto;
+    gap: 1.25rem;
+  }
+
+  .navigation-list {
+    gap: 0.625rem;
+  }
+
+  .navigation-list a {
+    font-size: 1rem;
+  }
+}

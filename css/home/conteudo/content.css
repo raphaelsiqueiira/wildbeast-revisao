@@ -1,0 +1,53 @@
+/* CONTENT */
+
+.content {
+  grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--medium-space);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--medium-space);
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.imagem-2 {
+  align-self: end;
+}
+
+/* ESTILOS CONTENT*/
+
+.content-title {
+  color: var(--cor-primaria-2);
+}
+
+.content-title h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.content-title span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: var(--cor-primaria-2);
+  max-width: 16em;
+}
+
+.informacoes p + p {
+  margin-top: var(--medium-space);
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

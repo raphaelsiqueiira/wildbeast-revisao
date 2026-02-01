@@ -1,0 +1,7 @@
+@media (prefers-reduced-motion: reduce) {
+  a {
+    scale: 1 !important;
+    transition: none !important;
+  }
+}
+

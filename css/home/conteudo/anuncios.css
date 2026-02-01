@@ -1,0 +1,11 @@
+/* ANUNCIOS */
+
+.anuncios {
+  grid-area: anuncios;
+  background-color: var(--cor-1);
+  display: grid;
+  align-content: start;
+  padding: var(--medium-space);
+  gap: var(--medium-space);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
