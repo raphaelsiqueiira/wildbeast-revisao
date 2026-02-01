@@ -54,4 +54,9 @@
   .content-title {
   text-align: center;
 }
+
+  .destaque{
+    width: 100%;
+    max-width: none;
+  }
 }
