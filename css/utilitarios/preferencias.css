@@ -3,5 +3,8 @@
     scale: 1 !important;
     transition: none !important;
   }
-}
 
+  .sidenav::after {
+    animation: none !important;
+  }
+}
