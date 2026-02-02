@@ -1,10 +1,104 @@
+/* ARQUIVO DE PREFERÊNCIAS DO USUÁRIO */
+
+/* REDUÇÃO DE MOVIMENTO*/
 @media (prefers-reduced-motion: reduce) {
+  .sidenav:after {
+    animation: none !important;
+  }
   a {
-    scale: 1 !important;
     transition: none !important;
+    scale: 1 !important;
+  }
+}
+
+/* MODO ESCURO (DARK MODE) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-paragrafo: rgba(255, 255, 255, 0.7);
+    --cor-0: #121212;
+    --cor-1: #1e1e1e;
+    --cor-deco: rgba(255, 255, 255, 0.3);
+    --focus: #fff;
+  }
+}
+
+/* ALTO CONTRASTE */
+@media (prefers-contrast: more) {
+  :root {
+    --cor-paragrafo: #000000 !important;
+    --cor-deco: #000000 !important;
   }
 
-  .sidenav::after {
-    animation: none !important;
+  /* Ajuste para Dark Mode com Alto Contraste */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-paragrafo: #ffffff !important;
+      --cor-deco: #ffffff !important;
+    }
+  }
+
+  html {
+    font-size: 125% !important;
+  }
+  body {
+    background-color: var(--cor-0) !important;
+  }
+
+  .navigation-list a {
+    color: #ffffff !important;
+    background-color: var(--cor-primaria-1) !important;
+    font-weight: bold;
+  }
+
+  .sidenav,
+  .anuncios {
+    background-color: var(--cor-primaria-1) !important;
+  }
+  .caracteristicas-numero {
+    color: var(--cor-0) !important;
+  }
+
+  .destaque,
+  .caracteristicas-rotulo,
+  .content-title span,
+  .atributos {
+    font-weight: 700 !important;
+  }
+
+  .destaque,
+  .content-title span {
+    font-size: 1rem !important;
+  }
+}
+
+/* BAIXO CONTRASTE OU REDUÇÃO DE TRANSPARÊNCIA */
+@media (prefers-contrast: less), (prefers-reduced-transparency: reduce) {
+  :root {
+    --cor-paragrafo: #000000 !important;
+    --cor-deco: #000000 !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-paragrafo: #ffffff !important;
+      --cor-deco: #ffffff !important;
+    }
+  }
+
+  .navigation-list a {
+    background-color: var(--cor-primaria-1) !important;
+    opacity: 1 !important;
+  }
+
+  .caracteristicas-numero {
+    color: var(--cor-0) !important;
+  }
+  .destaque,
+  .atributos {
+    font-weight: 700 !important;
+  }
+  .sidenav,
+  .anuncios {
+    background-color: var(--cor-0) !important;
   }
 }

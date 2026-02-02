@@ -14,13 +14,3 @@
   --border-radius-padrao: 5px;
   --sombra-padrao: 5px 5px 15px rgba(44, 44, 44, 0.15);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cor-paragrafo: rgba(255, 255, 255, 0.7);
-    --cor-0: #121212;
-    --cor-1: #1e1e1e;
-    --cor-deco: rgba(255, 255, 255, 0.3);
-    --focus: #ffffff;
-  }
-}
