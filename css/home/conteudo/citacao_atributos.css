@@ -12,11 +12,11 @@
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
-  color: var(--cor-paragrafo);
+  color: var(--cor-1);
 }
 
 .atributos li {
-  color: var(--cor-paragrafo);
+  color: var(--cor-1);
   font-family: Courier, monospace;
   font-size: 1.125rem;
   padding: 15px;
